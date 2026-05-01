@@ -24,11 +24,13 @@
   <nav>
     <div class="logo">🟡 COME COME SITI WEB</div>
   </nav>
+
   <div id="score-bar" class="score-bar">
     <div><div style="font-size:.7rem;color:#888">PONTOS</div><div id="score" style="color:#FFD700;font-weight:700;font-size:1.2rem">0</div></div>
     <div><div style="font-size:.7rem;color:#888">FASE</div><div id="level" style="font-weight:700">1</div></div>
     <div><div style="font-size:.7rem;color:#888">VIDAS</div><div id="lives" style="color:#FFD700">● ● ●</div></div>
   </div>
+
   <div id="game-container">
     <canvas id="gameCanvas"></canvas>
     <div class="overlay" id="overlay">
@@ -38,7 +40,15 @@
       <button class="btn-primary" id="startBtn" style="font-size:1.2rem;padding:14px 36px">JOGAR!</button>
     </div>
   </div>
+
   <p style="margin-top:12px;color:#444;font-size:.7rem">Use ← → ↑ ↓ ou WASD para mover</p>
+
+  <!-- Bibliotecas do Firebase (Devem vir antes do game.js) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+
+  <!-- Seu código do jogo -->
   <script src="game.js"></script>
 </body>
 </html>
